@@ -67,7 +67,7 @@ li {
 
 /* Part 2 solutions */
 ul .user .bio {
-  visibility: hidden;
+  display: none;
 }
 
 ul .user .location {
