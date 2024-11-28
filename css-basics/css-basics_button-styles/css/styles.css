@@ -1,4 +1,5 @@
 /* Please scroll down to the start of your exercise! */
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
 
 * {
   box-sizing: border-box;
@@ -32,18 +33,22 @@ Make sure not to put your code into the comments, because then nothing will happ
 
 .button1 {
   /* Style me! Change my border, set a border radius or try out other styles. :) */
+  border-radius: 30px;
 }
 
 .button2 {
   /* Style me! Change my color or background-color, or both! You can experiment with different color formats here, like HEX, RGB, etc. */
+  background-color: #d5c7bc;
 }
 
 .button3 {
   /* Style me! You can test out changing the font, font size, ...*/
+  font-family: "Bungee Spice";
 }
 
 .button4 {
   /* Style me! Can you add a shadow to this button? Try playing around with shadow properties - you can even change the shadow color, size, and more. */
+  box-shadow: 5px 5px #c8ab83;
 }
 
 /* Feel free to play around with other properties, too. */
