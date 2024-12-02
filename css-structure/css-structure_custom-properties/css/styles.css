@@ -1,3 +1,9 @@
+:root {
+  --color-granite: #252629;
+  --color-nemo: #ff4a11;
+  --color-foam: #fff;
+}
+
 *,
 *::before,
 *::after {
