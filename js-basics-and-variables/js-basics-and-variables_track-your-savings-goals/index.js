@@ -14,3 +14,14 @@ Let's build a small program to track your savings goals!
 
 4. Run your JavaScript program to see how much money you'll have saved after the specified time period.
 */
+
+// Initial variables
+let startingBalance = 1000;
+let monthlyContribution = 100;
+let months = 12;
+
+// Calculate total savings
+let totalSavings = startingBalance + monthlyContribution * months;
+
+// Print total savings to console
+console.log(totalSavings);
