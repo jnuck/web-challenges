@@ -10,7 +10,11 @@ console.clear();
 */
 
 // --v-- write your code here --v--
-
+const title = "Hello!";
+const content = "My name is Joshua";
+let likes = 100;
+const user = "Joshua";
+let isReported = false;
 // --^-- write your code here --^--
 
 /*
@@ -18,5 +22,15 @@ console.clear();
 */
 
 // --v-- write your code here --v--
+
+// Log all variables to the console
+console.log(title);
+console.log(content);
+console.log(likes);
+console.log(user);
+console.log(isReported);
+
+// Increase number of likes by 1
+console.log(likes + 1);
 
 // --^-- write your code here --^--
