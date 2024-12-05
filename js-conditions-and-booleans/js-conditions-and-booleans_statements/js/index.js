@@ -21,7 +21,21 @@ if (number % 2 == 0) {
 }
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 42;
+const numberOfHotdogs = 5;
+
+if (numberOfHotdogs < 5) {
+  let price = 2;
+  console.log(price * numberOfHotdogs);
+} else if (numberOfHotdogs < 100) {
+  let price = 1.5;
+  console.log(price * numberOfHotdogs);
+} else if (numberOfHotdogs < 1000000) {
+  let price = 1;
+  console.log(price * numberOfHotdogs);
+} else {
+  let price = 0.1;
+  console.log(price * numberOfHotdogs);
+}
 
 // Part 4: Daytime
 const currentHour = 12;
