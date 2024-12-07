@@ -11,12 +11,18 @@ We want to add functionality to the buttons on this page. When a button is click
   3. Use the two functions in the event listeners for the buttons to apply the corresponding color to the box when a button is clicked.
 */
 
+function changeColor(color) {
+  box.classList.remove("red", "green", "blue", "gray");
+  box.classList.add(color);
+}
+
 redButton.addEventListener("click", () => {
   /*
   Use your functions to:
     - remove all classes
     - then add the class name: "red"
   */
+  changeColor("red");
 });
 
 blueButton.addEventListener("click", () => {
@@ -25,6 +31,7 @@ blueButton.addEventListener("click", () => {
     - remove all classes
     - then add the class name: "blue"
   */
+  changeColor("blue");
 });
 
 greenButton.addEventListener("click", () => {
@@ -33,6 +40,7 @@ greenButton.addEventListener("click", () => {
     - remove all classes
     - then add the class name: "green"
   */
+  changeColor("green");
 });
 
 grayButton.addEventListener("click", () => {
@@ -41,6 +49,7 @@ grayButton.addEventListener("click", () => {
     - remove all classes
     - then add the class name: "gray"
   */
+  changeColor("gray");
 });
 
 // Write your two functions below:
