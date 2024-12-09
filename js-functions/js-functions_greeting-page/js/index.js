@@ -24,6 +24,16 @@ const display = document.querySelector('[data-js="display"]');
 
 function getGreeting() {
   // Code here
+  const currentTime = new Date().getHours();
+  if (currentTime >= 6 && currentTime <= 11) {
+    return "Good morning";
+  } else if (currentTime >= 12 && currentTime <= 18) {
+    return "Good Afternoon";
+  } else if (currentTime >= 19 && currentTime <= 22) {
+    return "Good Evening";
+  } else {
+    return "Good Night";
+  }
 }
 
 function getDayColor() {
