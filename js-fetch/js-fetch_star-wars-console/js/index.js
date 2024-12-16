@@ -1,7 +1,20 @@
 console.clear();
 
-const url = "https://swapi.py4e.com/api/people";
+async function fetchData() {
+  const url = await fetch("https://swapi.py4e.com/api/people");
+  const data = await url.json();
+  return data;
+}
 
-function fetchData() {}
+fetchData().then((data) => {
+  console.log(data);
+});
 
-fetchData();
+fetchData().then((data) => {
+  console.log(data.count);
+  console.log(data.results);
+});
+
+fetchData().then((data) => {
+  console.log(data.results[2].eye_color);
+});
