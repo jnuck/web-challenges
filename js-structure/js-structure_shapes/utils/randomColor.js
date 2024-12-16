@@ -2,4 +2,4 @@ export function getRandomColor() {
   return `hsl(${Math.floor(Math.random() * 360)} 80% 55%)`;
 }
 
-export const randomColor = getRandomColor;
+// export const randomColor = getRandomColor;
