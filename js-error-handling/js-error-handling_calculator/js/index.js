@@ -25,6 +25,6 @@ form.addEventListener("submit", (event) => {
     output.innerText = operations[operation](firstNumber, secondNumber);
   } catch (error) {
     const errorMessage = document.querySelector("p");
-    errorMessage.innerText = "Cannot divice by zero!";
+    errorMessage.innerText = "Cannot divide by zero!";
   }
 });
