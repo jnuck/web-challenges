@@ -7,8 +7,12 @@ const errorElement = document.querySelector("[data-js='error']");
 async function fetchUserData(url) {
   try {
     const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Response status: ${response.status}`);
+    }
     return await response.json();
   } catch (error) {
+    errorElement.textContent = Error;
     return { error: error.message };
   }
 }
