@@ -12,6 +12,9 @@ const company = {
   location: "Hamburg",
 };
 
+export const { course } = company;
+console.log(course);
+
 // Example: export const { value1 } = myObject;
 
 /*
@@ -25,6 +28,9 @@ Use destructuring to extract the following:
 */
 
 const user = { name: "John", years: 30 };
+
+export const { name, years: age, isAdmin = false } = user;
+console.log(name, age, isAdmin);
 
 /*
 EXERCISE 3
@@ -65,11 +71,8 @@ export function logInfo(city) {
   return `${name} is in ${country} and has ${numPeople} inhabitants in it.`;
 }
 
-<<<<<<< HEAD
 // This is how you call it:
-=======
 // Usage example:
->>>>>>> main
 console.log(
   logInfo({ name: "Marseille", country: "France", population: 861635 })
 );
