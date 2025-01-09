@@ -1,3 +1,11 @@
 export default function App() {
-  return <h1>Replace me with your component!</h1>;
+  return <Sum />;
+}
+
+function Sum({ valueA, valueB }) {
+  return (
+    <h1>
+      {(valueA = 10)} + {(valueB = 20)} = {valueA + valueB}
+    </h1>
+  );
 }
