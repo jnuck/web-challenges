@@ -11,33 +11,57 @@ const StyledLights = styled.ul`
   justify-content: center;
 `;
 
+const rooms = [
+  {
+    name: "Living Room",
+    isOn: false,
+    id: 1,
+  },
+  {
+    name: "Kitchen",
+    isOn: false,
+    id: 2,
+  },
+  {
+    name: "Bedroom",
+    isOn: false,
+    id: 3,
+  },
+  {
+    name: "Bathroom",
+    isOn: false,
+    id: 4,
+  },
+  {
+    name: "Garage",
+    isOn: false,
+    id: 5,
+  },
+  {
+    name: "Porch",
+    isOn: false,
+    id: 6,
+  },
+  {
+    name: "Garden",
+    isOn: false,
+    id: 7,
+  },
+  {
+    name: "Office",
+    isOn: false,
+    id: 8,
+  },
+];
+
 export default function Lights() {
   return (
     <StyledLights>
-      <li>
-        <Light name="Living Room" />
-      </li>
-      <li>
-        <Light name="Kitchen" />
-      </li>
-      <li>
-        <Light name="Bedroom" />
-      </li>
-      <li>
-        <Light name="Bathroom" />
-      </li>
-      <li>
-        <Light name="Garage" />
-      </li>
-      <li>
-        <Light name="Porch" />
-      </li>
-      <li>
-        <Light name="Garden" />
-      </li>
-      <li>
-        <Light name="Office" />
-      </li>
+      {rooms.map((room) => (
+        <li key={lights.id}>
+          <Light name={lights.name} />
+        </li>
+      ))}
     </StyledLights>
   );
 }
